@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="D:\VSCODE Projects\My New Projects\css\main.css">
+</head>
+<body>
+    <div class="overlay" id="overlay">
+        <h3>Searching Now...</h3>
+    </div>
+    <div class="hero-bg">
+        <section class="top">
+            <header>
+                <a href="#">burger.hub</a>
+            </header>  
+            
+            <h1><span>The Yummy</span> Burger Experience</h1>
+
+            <p>Welcome to the Burger Hub. This is the official webpage of Burger Hub. You can order your favorite burger buns from here right now with just a 
+                few clicks. You can search the nearest burger hub outlet from down below. Simply enter your city and click find burger now. Enjoy your burger meal...!</p>
+ 
+            <div class="form-container">
+                 <form action="">
+                    <div class="from-left">
+                        <label for="city">Enter your city:</label>
+                        <input type="text" name="city" id="city">
+                        <p>Example: "Maharagama"</p>
+                    </div>
+
+                    <input type="button" value="Find Burger Now" id="cta-btn">
+                 </form>
+            </div>
+        </section>
+    </div> 
+
+    <section class="authentic">
+        <div class="right-col">
+            <h2>Authentic. Awesome.</h2>
+            <p>In Burger Hub you can enjoy many varieties of burgers according to your choice.Such as <ul>
+                <li>Classic Cheese Burgers</li>
+                <li>Chicken Burgers</li>
+                <li>Ham Burgers</li>
+                <li>Veg Burgers</li>
+            </ul> 
+                Is it awesome right? and you can also customize your burger according your taste. Islandwide delivery is available 24x7</p>
+        </div>
+        <img src="images/food 3.jpg" alt="Image of a Burger" width="320px">
+    </section>
+
+    <script>
+
+        let btn = document.getElementById('cta-btn');
+        let overlay = document.getElementById('overlay');
+
+        btn.addEventListener('click', () => {
+            overlay.style.display = 'grid';
+            overlay.classList.add('animate-overlay')
+        })
+
+    </script>
+
+</body>
+</html>
